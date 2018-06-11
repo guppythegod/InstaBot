@@ -1,7 +1,7 @@
 # CUSTOM INGORES
 
 # IGNORES ALL SECRETS, TOKENS, PASSWORDS
-.credentials/*.json
+.credentials/*.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
