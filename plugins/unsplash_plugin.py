@@ -4,7 +4,7 @@ import json
 UNSPLASH_API = "https://api.unsplash.com"
 
 
-class UnsplashClient:
+class UnsplashClient(object):
     def __init__(self, api_key):
         self.api_key = api_key
 

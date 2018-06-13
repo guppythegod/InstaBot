@@ -10,5 +10,6 @@ import requests
 configs = config.configurations
 
 unsplash = unsplash_plugin.UnsplashClient(configs["api_keys"]["UNSPLASH_API_KEY"])
+pexels = pexels_plugin.PexelsClient(configs["api_keys"]["PEXELS_API_KEY"])
 
 print(unsplash.get_images(10, "office"))
