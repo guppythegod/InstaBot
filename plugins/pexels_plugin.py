@@ -6,7 +6,7 @@ PEXELS_API = "https://api.pexels.com/v1"
 
 class PexelsClient(object):
 
-    def __init__(self, api_key, token)
+    def __init__(self, api_key):
         self.AUTH_HEADER = {"Authorization": api_key}
 
     def get_images(self, amount, query):
@@ -15,7 +15,7 @@ class PexelsClient(object):
             (
                 requests.get(
                     PEXELS_API
-                    + "/search?per_page={}&query={}&orientation=squarish".format(
+                    + "/search?per_page={}&query={}".format(
                         amount, query
                     ), 
                     headers=self.AUTH_HEADER
